@@ -1,0 +1,36 @@
+{
+  "clientes": [
+    {
+      "nombre": "Fernandoo",
+      "empresa": "Proyecto CRM",
+      "email": "penpen@mailpenpen.com",
+      "telefono": "+5691234567",
+      "notas": "El mejor cliente asies",
+      "id": 1
+    },
+    {
+      "nombre": "Emanuel",
+      "empresa": "Detective",
+      "email": "penpen@mailpenpen.com",
+      "telefono": "+56912345678",
+      "notas": "La paso fatal",
+      "id": 2
+    },
+    {
+      "nombre": "Rossana",
+      "empresa": "Llama",
+      "email": "penpen@mailpenpen.com",
+      "telefono": "+56912345678",
+      "notas": "A",
+      "id": 4
+    },
+    {
+      "nombre": "Bad",
+      "empresa": "Santa",
+      "email": "penpen@mailpenpen.com",
+      "telefono": "+56912345678",
+      "notas": "No me diga",
+      "id": 5
+    }
+  ]
+}
