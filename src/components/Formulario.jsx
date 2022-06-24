@@ -35,7 +35,7 @@ export const Formulario = ({ cliente, cargando }) => {
 
             if(cliente.id) {
                 // ---- Editando un Registro ---- //
-                const url = `http://localhost:4000/clientes/${cliente.id}`
+                const url = `${import.meta.env.VITE_API_URL}/${cliente.id}`
                 // En base a la configuracion que requiere json-server por cada peticion
                 respuesta = await fetch(url, {
                     method: 'PUT',
@@ -46,7 +46,7 @@ export const Formulario = ({ cliente, cargando }) => {
                 })
             }else {
                 // ---- Nuevo Registro ---- //
-                const url = 'http://localhost:4000/clientes'
+                const url = import.meta.env.VITE_API_URL
                 // En base a la configuracion que requiere json-server por cada peticion
                 respuesta = await fetch(url, {
                     method: 'POST',
@@ -60,7 +60,7 @@ export const Formulario = ({ cliente, cargando }) => {
             }
             await respuesta.json()
             navigate('/clientes')
-            
+
         } catch (error) {
             console.log(error)
         }
