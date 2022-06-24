@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* Utilizando nested routes se pueden anidar una serie de rutas a una ruta*/}
-        <Route path="/clientes" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           {/* Mediante index determino la ruta principal y con path determino los anidados */}
           <Route index element={<Inicio />} />
           <Route path='nuevo' element={<NuevoCliente />} />
